@@ -25,8 +25,12 @@ package com.ddennis.display.drawing.drawStates {
 		public function LineState(drawApp:DrawStateApp) {
 			super( drawApp)
 			type = "LineState"
-			
-			
+				
+		}
+		
+		
+		public function propeties(thinkness:int ):void {
+			trace ("LineState.as > thinkness  = "+thinkness)
 		}
 		
 				

@@ -18,10 +18,15 @@ package com.ddennis.display.drawing {
 		public function DrawState(drawApp:DrawStateApp) {
 			this.drawApp = drawApp;			
 		}
+	
 		
 				
-		public function line():void {			
+		public function line(thinkness:int):void {			
 			drawApp.state = drawApp.lineState
+			
+			drawApp.lineState.propeties(thinkness)
+			
+			
 		}
 				
 		public function square():void {				

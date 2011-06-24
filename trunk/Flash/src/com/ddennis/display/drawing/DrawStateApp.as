@@ -40,6 +40,12 @@ package com.ddennis.display.drawing {
 		
 		
 		
+		
+		// overvejelser  - vil det være lettere hvis vi passer en sprite ind ude fra ved hver tegning.
+		
+		
+		
+		
 		public function startDrawingApp():void {
 						
 			state.addEventListener(DrawState.DRAWING_STOP , drawingStop)			
@@ -99,10 +105,15 @@ package com.ddennis.display.drawing {
 		}
 		
 		
-		
-		public function toLineState():void {			
-			state.line ()	
-			//startDrawingApp	()
+		/**
+		 * Basic flow - this function is called from outside the drawing app
+		 * this function then calles to the DrawStates which all the drawingtype extends - which switces to the LineState class.
+		 * 
+		 * @param	thinkness
+		 */
+		public function toLineState(thinkness:int = 888 ):void {			
+			state.line (thinkness)	
+			
 		}
 		
 		
