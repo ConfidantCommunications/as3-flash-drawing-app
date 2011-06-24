@@ -14,9 +14,9 @@ package com.ddennis.display.drawing {
 		
 		function tick(xPos:int , yPos:int):void;
 								
-		function line():void
+		function line(thinkness:int):void
 		function square():void
-			
+								
 		function circle():void;
 		
 		function triangle():void;
