@@ -1,0 +1,1 @@
+Simple drawing App written in as3, using a simple state pattern to separate each drawing tool. Each drawing can be saved as XML. Catmull Rom Spline is used to minimize points when using the freeDrawTool. The Project is written using Flashdevelop, it can be compiled using Flash IDE or flex.
